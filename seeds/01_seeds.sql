@@ -7,8 +7,8 @@ INSERT INTO users (name, email, password) VALUES ('Tom Haverford', 'tom@parks.co
 INSERT INTO users (name, email, password) VALUES ('Donna Meagle', 'donna@parks.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
 
 
-INSERT INTO properties (title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms,  number_of_bedrooms, country, street, city, province, post_code, active) 
-VALUES (
+INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms,  number_of_bedrooms, country, street, city, province, post_code, active) 
+VALUES (1, 
   'Luxury Penthouse', 
   'Description', 
   'img', 
@@ -24,7 +24,8 @@ VALUES (
   'V7V 2R9',
   TRUE
   ),
-  ('Modern Apartment', 
+  (2, 
+  'Modern Apartment', 
   'Description', 
   'img', 
   'img', 
@@ -40,7 +41,8 @@ VALUES (
   FALSE
   ),
       
-  ('Humble Beginnings', 
+  (3,
+  'Humble Beginnings', 
   'Description', 
   'img', 
   'img', 
